@@ -8,7 +8,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     keyboard = [
         [KeyboardButton("💰 Số dư của tôi")],
         [KeyboardButton("🛒 Rút code"), KeyboardButton("📮 MỜI BẠN BÈ")],
-        [KeyboardButton("📄 Link Game"), KeyboardButton("📊 Thống kê bot")]
+        [KeyboardButton("📄 Link Game"), KeyboardButton("📊 CSKH Hỗ Trợ")]
     ]
 
     reply = ReplyKeyboardMarkup(keyboard, resize_keyboard=True)
@@ -26,7 +26,7 @@ async def handle_buttons(update: Update, context: ContextTypes.DEFAULT_TYPE):
         await update.message.reply_text("Link mời: https://t.me/YourBot?start=ref123")
     elif text == "📄 Link Game":
         await update.message.reply_text("Link game: https:cpbank.club")
-    elif text == "📊 Hỗ trợ":
+    elif text == "📊 CSKH Hỗ trợ":
         await update.message.reply_text("CSKH: @hotrocpbank")
     else:
         await update.message.reply_text("Không hiểu lệnh.")
